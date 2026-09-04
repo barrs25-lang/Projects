@@ -1,0 +1,38 @@
+# This yaml file defines the VC (Vehicle Control) parameter vector.
+#
+# Generation date:  06-Oct-2025 15:00:23
+#
+par: [     0.0100000,  # ts                    0) Sample Period (seconds)
+        2253.4000000,  # max_drv_torque        1) Max Drive Torque (Nm)
+           0.0000000,  # min_drv_torque        2) Min Drive Torque (Nm)
+          -0.0000000,  # max_brk_torque        3) Max Brake Torque (Nm)
+       -1000.0000000,  # min_brk_torque        4) Min Brake Torque (Nm)
+         100.0000000,  # max_delta_torque      5) Max Delta Torque (Nm)
+         100.0000000,  # max_delta_brake       6) Max Delta Brake (Nm)
+          11.1760000,  # max_speed             7) Max Vehicle Speed (m/s)
+           0.0000000,  # min_speed             8) Min Vehicle Speed (m/s)
+           3.5000000,  # max_alat              9) Max Lateral Acceleration (m/s/s)
+         540.0000000,  # max_steer            10) Max Steering Command (deg)
+        -540.0000000,  # min_steer            11) Min Steering Command (deg)
+         100.0000000,  # max_delta_steer      12) Max delta steer (deg/sample)
+        3979.0000000,  # kp_speed             13) Proportional gain for Speed Control
+          25.0000000,  # ki_speed             14) Integral gain for Speed Control
+          95.0000000,  # kd_speed             15) Derivative gain for Speed Control
+          20.0000000,  # fbreak_diff          16) 1st order differentiator break freq. (Hz)
+        7020.4637902,  # kff_gain             17) Feedforward gain for pitch
+           5.0000000,  # fbreak_fflpf         18) 1st order LPF break freq. (Hz) for pitch
+           3.4000000,  # fz_lead              19) Zero frequency (Hz) for lead filter
+           1.7000000,  # zz_lead              20) Zero damping ratio for lead filter
+           8.5000000,  # fp_lead              21) Pole frequency (Hz) for lead filter
+        2542.9100000,  # kappa2theta          22) theta(deg) = kappa2theta * kappa(rad/m)
+           0.5000000,  # fbreak_vref          23) 1st order LPF break freq. (Hz) for Vref & Alat
+           2.5000000,  # max_lookahead        24) Max Lookahead Distance (m)
+           1.0000000,  # min_lookahead        25) Min Lookahead Distance (m)
+           0.5000000,  # lookahead_ratelimit  26) Lookahead Rate Limit (m/sample)
+           0.1000000,  # vdead                27) Dead Zone Velocity (m/s)
+          18.0000693,  # wT                   28) Torque model cutoff frequency (rad/s)
+           0.9000000,  # zT                   29) Torque model damping ratio (nondim)
+           9.5001762,  # wB                   30) Brake model cutoff frequency (rad/s)
+           1.1000000]  # zB                   31) Brake model damping ratio (nondim)
+#
+# end-of-parameters
