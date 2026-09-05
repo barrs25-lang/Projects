@@ -6,7 +6,7 @@ Repository to house my personal projects.
 ## Projects
 
 ### [Autodrive Simulator CICD](Autodrive%20Simulator%20CICD)
-MATLAB/Simulink autonomous vehicle controller simulator with a full CI/CD pipeline (Jenkins, GitLab CI, Azure Pipelines). Uses a clothoid toolbox for smooth path generation and evaluates tracking accuracy, comfort, and stability across real-world and synthetic tracks (VIR, Pikes Peak, Figure-8). See [README_MATLAB.md](Autodrive%20Simulator%20CICD/README_MATLAB.md) for details.
+MATLAB/Simulink autonomous vehicle controller simulator with a full CI/CD pipeline (Git Actions). Uses a clothoid toolbox for smooth path generation and evaluates tracking accuracy, comfort, and stability across real-world and synthetic tracks (VIR, Pikes Peak, Figure-8). I integrated automated parallel-run, batch testing, to execute automoatically upon a pull request and block merges that did not pass the required metrics for autonomous navigation and control. See [README_MATLAB.md](Autodrive%20Simulator%20CICD/README_MATLAB.md) for details.
 
 ### [Adaptive Control HMMWV](Adaptive%20Control%20HMMWV)
 Final project implementing and testing an adaptive control law on a HMMWV vehicle model, co-simulated in the Chrono physics engine via PyChrono. See [NoteOnProject.md](Adaptive%20Control%20HMMWV/NoteOnProject.md) for setup instructions.
